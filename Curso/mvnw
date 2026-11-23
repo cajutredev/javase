@@ -1,0 +1,32 @@
+#!/bin/sh
+
+set -eu
+
+MAVEN_VERSION=3.9.9
+MAVEN_WRAPPER_DIST="${HOME}/.m2/wrapper/dists/apache-maven-${MAVEN_VERSION}"
+MAVEN_HOME="${MAVEN_WRAPPER_DIST}/apache-maven-${MAVEN_VERSION}"
+MAVEN_ARCHIVE="${MAVEN_WRAPPER_DIST}/apache-maven-${MAVEN_VERSION}-bin.zip"
+MAVEN_URL="https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/${MAVEN_VERSION}/apache-maven-${MAVEN_VERSION}-bin.zip"
+
+if [ ! -x "${MAVEN_HOME}/bin/mvn" ]; then
+    mkdir -p "${MAVEN_WRAPPER_DIST}"
+
+    if ! command -v unzip >/dev/null 2>&1; then
+        echo "Maven wrapper requires unzip to extract Maven." >&2
+        exit 1
+    fi
+
+    if command -v curl >/dev/null 2>&1; then
+        curl -fL --retry 3 "${MAVEN_URL}" -o "${MAVEN_ARCHIVE}"
+    elif command -v wget >/dev/null 2>&1; then
+        wget "${MAVEN_URL}" -O "${MAVEN_ARCHIVE}"
+    else
+        echo "Maven wrapper requires curl or wget to download Maven." >&2
+        exit 1
+    fi
+
+    unzip -q -o "${MAVEN_ARCHIVE}" -d "${MAVEN_WRAPPER_DIST}"
+    rm -f "${MAVEN_ARCHIVE}"
+fi
+
+exec "${MAVEN_HOME}/bin/mvn" "$@"
