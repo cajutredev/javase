@@ -5,7 +5,7 @@ import lombok.ToString;
 
 @ToString 
 @NoArgsConstructor 
-public class FiguraBidimensional extends Figura {
+public abstract class FiguraBidimensional extends Figura {
     
     public FiguraBidimensional(double area, double perimetro) {
         super(area, perimetro);

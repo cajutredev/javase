@@ -11,16 +11,11 @@ import lombok.ToString;
 @Setter 
 @Getter 
 @ToString 
-public class Figura {
+public abstract class Figura {
     
     private double area;
     private double perimetro;
 
-    public double calcularArea() {
-        return -1.0;
-    }
-
-    public double calcularPerimetro() {
-        return -1.0;
-    }
+    public abstract double calcularArea();
+    public abstract double calcularPerimetro();
 }

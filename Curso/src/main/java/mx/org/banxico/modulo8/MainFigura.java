@@ -4,17 +4,17 @@ public class MainFigura {
     
     public static void main(String[] args) {
         
-        Figura figura = new Figura();
-        System.out.println("######### Figura #########");
-        System.out.println("Area: " + figura.calcularArea());
-        System.out.println("Perimetro: " + figura.calcularPerimetro());
-        System.out.println(figura);
+        // Figura figura = new Figura();
+        // System.out.println("######### Figura #########");
+        // System.out.println("Area: " + figura.calcularArea());
+        // System.out.println("Perimetro: " + figura.calcularPerimetro());
+        // System.out.println(figura);
 
-        FiguraBidimensional figuraBidimensional = new FiguraBidimensional();
-        System.out.println("######### FiguraBidimensional #########");
-        System.out.println("Area: " + figuraBidimensional.calcularArea());
-        System.out.println("Perimetro: " + figuraBidimensional.calcularPerimetro());
-        System.out.println(figuraBidimensional);
+        // FiguraBidimensional figuraBidimensional = new FiguraBidimensional();
+        // System.out.println("######### FiguraBidimensional #########");
+        // System.out.println("Area: " + figuraBidimensional.calcularArea());
+        // System.out.println("Perimetro: " + figuraBidimensional.calcularPerimetro());
+        // System.out.println(figuraBidimensional);
 
         Circulo circulo = new Circulo(25.0, 9.0);
         System.out.println("######### Circulo #########");
