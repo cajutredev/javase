@@ -67,24 +67,5 @@ public class Estudiante {
                 + ", calificacion=" + calificacion + "]";
     }
 
-    public static void main(String[] args) {
-
-        // Scanner scanner = new Scanner(System.in);
-
-        // System.out.println("Introduce el nombre: ");
-        // String nombre = scanner.next();
-        // System.out.println("Introduce el primer apellido: ");
-        // String primerApellido = scanner.next();
-        // System.out.println("Introduce la edad: ");
-        // int edad = scanner.nextInt();
-
-        Estudiante estudiante = new Estudiante();
-
-        estudiante.setNombre("Juan");
-        estudiante.setPrimerApellido("Trejo");
-        estudiante.setEdad(35);
-        estudiante.calcularCalificacion(3, 27);
-
-        System.out.println(estudiante);
-    }
+   
 }
