@@ -1,0 +1,64 @@
+        EJERCICIO: ANALISIS DE VENTAS CON STREAMS
+     
+      OBJETIVO:
+     
+      Utilizar Streams API para procesar una coleccion de objetos
+      Venta y realizar operaciones de analisis comercial.
+     
+      DESCRIPCION:
+     
+      Se crea una clase Venta que representa una operacion
+      comercial realizada por un vendedor.
+     
+      Cada venta contiene los siguientes atributos:
+     
+      - id: identificador de la venta.
+      - vendedor: nombre del vendedor.
+      - producto: producto vendido.
+      - cantidad: unidades vendidas.
+      - precioUnitario: precio de cada unidad.
+      - mes: mes en que se realizo la venta.
+     
+      El importe de cada venta se calcula multiplicando
+      la cantidad por el precio unitario.
+     
+      OPERACIONES:
+     
+      1. Mostrar todas las ventas.     
+      2. Calcular el importe de cada venta.
+      3. Obtener las ventas superiores a $10,000.
+      4. Calcular el importe total de todas las ventas.
+      5. Agrupar las ventas por vendedor.
+      6. Obtener el vendedor con mayores ingresos.
+      7. Calcular el total vendido por mes.
+      8. Obtener el producto mas vendido por unidades.
+      9. Ordenar los vendedores segun sus ingresos.
+      10. Obtener las cinco ventas de mayor importe.
+     
+      METODOS QUE PUEDEN USARSE:
+     
+      - stream()
+      - forEach()
+      - map()
+      - filter()
+      - sorted()
+      - limit()
+      - Comparator
+      - comparingDouble()
+      - groupingBy()
+      - summingDouble()
+      - summingInt()
+      - mapToDouble()
+      - sum()
+      - max()
+      - Optional
+      - Map.Entry
+     
+      IMPORTANTE:
+     
+      Cada operacion utiliza un nuevo Stream generado a partir
+      de la lista original.
+     
+      Los metodos de Collectors permiten transformar el flujo
+      de objetos en estructuras de datos como Map.
+     
