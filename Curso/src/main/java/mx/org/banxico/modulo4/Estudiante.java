@@ -1,6 +1,5 @@
 package mx.org.banxico.modulo4;
 
-import java.util.Scanner;
 
 public class Estudiante {
 
@@ -66,6 +65,5 @@ public class Estudiante {
         return "Estudiante [nombre=" + nombre + ", primerApellido=" + primerApellido + ", edad=" + edad
                 + ", calificacion=" + calificacion + "]";
     }
-
    
 }
