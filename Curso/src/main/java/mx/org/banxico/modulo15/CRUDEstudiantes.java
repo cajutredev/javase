@@ -49,22 +49,7 @@ public class CRUDEstudiantes {
         }
     }
 
-    /**
-     * Método: main
-     *
-     * Descripción:
-     * Punto de entrada del programa.
-     *
-     * Inicializa la estructura de la base de datos y presenta un menú
-     * interactivo para que el usuario seleccione la operación CRUD
-     * que desea ejecutar.
-     *
-     * El menú se mantiene activo mediante un ciclo do-while hasta
-     * que el usuario selecciona la opción de salir.
-     *
-     * Cada opción invoca directamente el método estático encargado
-     * de realizar la operación correspondiente.
-     */
+
     public static void main(String[] args) {
 
         try {
