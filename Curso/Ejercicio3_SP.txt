@@ -1,0 +1,31 @@
+
+  EJERCICIO 3: SIMULACIÓN DE TAREAS INDEPENDIENTES
+ 
+  DESCRIPCION:
+ 
+  Desarrollar un programa que permit simular la ejecución concurrente
+  de tres tareas independientes mediante la interfaz Runnable.
+ 
+  El programa representará un sistema que necesita realizar tres
+  operaciones diferentes:
+ 
+  1. DescargarArchivo:
+     Simula la descarga de un archivo.
+ 
+  2. ProcesarDatos:
+     Simula el procesamiento de un conjunto de registros.
+ 
+  3. GenerarReporte:
+     Simula la generación de un reporte.
+ 
+  Cada tarea implementará Runnable y sobrescribirá el método run(),
+  donde se definirán las instrucciones correspondientes a su operación.
+ 
+  Para simular el tiempo de procesamiento se utilizará Thread.sleep().
+ 
+  En el método main se crearán tres objetos Thread, cada uno asociado
+  a una tarea diferente.
+ 
+  Los tres hilos se iniciarán mediante start(), permitiendo que
+  las operaciones se ejecuten concurrentemente.
+ 
