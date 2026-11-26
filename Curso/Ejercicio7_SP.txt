@@ -1,0 +1,33 @@
+
+  EJERCICIO 7: COORDINACIÓN DE HILOS MEDIANTE JOIN()
+ 
+  DESCRIPCIÓN:
+ 
+  Desarrollar un programa que permita simular la ejecución concurrente
+  de tres operaciones bancarias independientes.
+ 
+  Las operaciones que se ejecutarán serán:
+ 
+  1. Depositr dinero:
+     Simula el registro de un depósito en una cuenta bancaria.
+ 
+  2. Retirar dinero:
+     Simula el procesamiento de un retiro bancario.
+ 
+  3. Consultar saldo:
+     Simula la consulta del saldo de una cuenta bancaria.
+ 
+  Cada operacion sera implementada mediante una clase que hereda
+  de Thread y sobrescribe el método run().
+ 
+  Para simular el tiempo de procesamiento se utilizará Thread.sleep().
+ 
+  En el método main se crearán tres hilos independientes y se iniciarán
+  mediante el método start().
+ 
+  Posteriormente, el hilo principal utilizará join() para esperar
+  a que cada uno de los hilos termine su ejecución.
+ 
+  El programa solamente mostrará el mensaje final cuando las tres
+  operaciones bancarias hayan concluido.
+ 
